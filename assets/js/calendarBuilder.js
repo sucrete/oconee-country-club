@@ -1,5 +1,5 @@
 const calendarQuery =
-  "https://t47jkpm7.api.sanity.io/v2025-08-13/data/query/production?query=%7B%0A++%22events%22%3A+*%5B_type+%3D%3D+%22event%22%5D%0A%7D&perspective=published";
+  "https://9bp0tyzf.api.sanity.io/v2025-10-20/data/query/production?query=%7B%0A++%22events%22%3A+*%5B_type+%3D%3D+%22event%22%5D%2C%0A++++%22images%22%3A+*%5B_type+%3D%3D+%22sanity.imageAsset%22%5D%0A%7D&perspective=published";
 
 document.addEventListener("DOMContentLoaded", function () {
   var cal = document.getElementById("calendar");
@@ -105,12 +105,14 @@ document.addEventListener("DOMContentLoaded", function () {
                       </div>
                     </div>
                     <hr/>
-                    <div class="event-list-description">${seg.def.extendedProps.eventDescription}</div>
+                    <div class="event-list-description">${
+                      seg.def.extendedProps.eventDescription
+                    }</div>
                     <div class="event-list-footer d-flex flex-column flex-md-row ${
-                       seg.def.extendedProps.linkQuestion ||
-                       seg.def.extendedProps.flyerQuestion
-                         ? ""
-                         : "no-buttons"
+                      seg.def.extendedProps.linkQuestion ||
+                      seg.def.extendedProps.flyerQuestion
+                        ? ""
+                        : "no-buttons"
                     }">
                  ${
                    seg.def.extendedProps?.flyer

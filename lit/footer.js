@@ -142,7 +142,7 @@ export class Footer extends LitElement {
               <div class="col-12 col-lg-4 text-center">
                 <a
                   class="link-to-studio no-underline"
-                  href="https://west-fork.sanity.studio/"
+                  href="https://oconee-country-club.sanity.studio/"
                   target="_blank"
                 >
                   © Oconee Country Club | ${new Date().getFullYear()}

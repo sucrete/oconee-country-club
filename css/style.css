@@ -12090,14 +12090,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12134,100 +12134,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(4) {
-  z-index: 7;
-  transform: rotate(-4deg) translate(-50%, -50%);
-}
-.slyde:nth-child(4):before {
-  content: "4";
-}
-.slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
-  transform: rotate(2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5):before {
-  content: "5";
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6):before {
-  content: "6";
-}
-.slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7):before {
-  content: "7";
-}
-.slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12242,16 +12154,104 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(4) {
+  z-index: 7;
+  transform: rotate(-2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(4):before {
+  content: "4";
+}
+.slyde:nth-child(4).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5):before {
+  content: "5";
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6):before {
+  content: "6";
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(-4deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7):before {
+  content: "7";
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-4deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12288,14 +12288,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -14238,7 +14238,7 @@ li.has-dropdown .doesnt-have-mr {
   width: 100%;
   bottom: 0;
   background-image: linear-gradient(to bottom, hsl(0, 0%, 0%) 100%, hsl(0, 0%, 0%) 100%);
-  opacity: 0.4;
+  opacity: 0.3;
   z-index: 1;
 }
 .banner-four-area .banner-four-wrapper .inner-left {
@@ -14824,17 +14824,25 @@ li.has-dropdown .doesnt-have-mr {
   transition: all 0.25s ease;
 }
 .fc-event .fc-event-title {
-  font-family: "t26-carbon";
-  text-transform: uppercase;
+  font-family: "Sackers", monospace;
   font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: white;
   letter-spacing: 1px;
   font-weight: 525;
   padding-left: 8px;
   padding-right: 8px;
   text-overflow: ellipsis;
 }
+@media screen and (max-width: 768px) {
+  .fc-event .fc-event-title {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
 .fc-event:hover {
-  background-color: #ef430c;
+  background-color: #005e51;
   box-shadow: rgba(1, 80, 65, 0.3) 0px 4px 6px -1px, rgba(1, 80, 65, 0.1) 0px 2px 4px -1px, inset 0 0.5px 2px rgba(255, 255, 255, 0.6274509804);
 }
 
@@ -15074,14 +15082,14 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   border: none;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment {
-  border: 1.5px solid var(--color-secondary);
+  border: 1.5px solid #de8a26;
   background-color: transparent;
-  color: var(--color-secondary);
+  color: #de8a26;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment:hover {
   color: white;
-  background-color: #e3ab3b;
-  border-color: #e3ab3b;
+  background-color: #de8a26;
+  border-color: #de8a26;
 }
 
 .fc-monthList-view {
@@ -15100,10 +15108,10 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   z-index: 7;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-title {
-  font-family: "Instrument Sans";
+  font-family: "neue-haas-grotesk-text";
   color: rgb(29, 29, 29);
   font-size: 21px;
-  font-weight: 550;
+  font-weight: 500;
   padding-bottom: 0.75rem;
   letter-spacing: 0.1px;
 }
@@ -15154,9 +15162,8 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   align-items: center;
   justify-content: center;
   border-radius: 99px;
-  background-color: black;
   text-decoration: none;
-  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.25s ease;
   padding: 6px 12px 6px 14px;
   box-shadow: none;
 }
@@ -15185,14 +15192,14 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   color: rgba(255, 255, 255, 0.8);
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn {
-  border: 1.5px solid var(--color-secondary);
-  background-color: transparent;
-  color: var(--color-secondary);
+  border: 1.5px solid #de8a26;
+  background-color: white;
+  color: #de8a26;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn:hover {
   color: white;
-  background-color: #e3ab3b;
-  border-color: #e3ab3b;
+  background-color: #de8a26;
+  border-color: #de8a26;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer.no-buttons {
   padding: 0;
@@ -16188,8 +16195,8 @@ footer .rts-footer-area .container > .row [class*=col].logo-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 footer .rts-footer-area .container > .row [class*=col].logo-column .cornered-box .footer-logo {
   margin: 0 auto;
@@ -16295,7 +16302,7 @@ footer .rts-footer-area .container > .row [class*=col].weather-column .weather-b
   padding-bottom: 0px;
 }
 footer .rts-footer-area .container .extra-details-row {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 3rem;
   padding-bottom: 0rem;
 }
@@ -17824,10 +17831,14 @@ section.contact-page-body .contact-area-form-wrapper .container-contact .row h2 
   flex-direction: column;
   overflow-y: auto;
   overflow: visible;
+  background-image: url(./../assets/images/logo/oconee-logo-ring-light-grey.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 197% 50%;
 }
 @media only screen and (max-width: 575px) {
   .side-bar {
-    width: 90%;
+    width: 100%;
   }
 }
 .side-bar .inner-main-wrapper-desk .thumbnail {
@@ -17864,7 +17875,7 @@ section.contact-page-body .contact-area-form-wrapper .container-contact .row h2 
 .side-bar.show {
   right: 0;
   overflow-y: auto;
-  box-shadow: -5px 0 30px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: -5px 0 30px 50px rgba(0, 0, 0, 0.35);
 }
 .side-bar button {
   width: 42px;

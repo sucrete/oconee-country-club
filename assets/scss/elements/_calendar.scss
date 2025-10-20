@@ -12,9 +12,7 @@
   margin-bottom: 1px !important;
   transition: all 0.25s ease;
   .fc-event-title {
-    font-family: "t26-carbon";
-    text-transform: uppercase;
-    font-size: 12px;
+   @include monospaced(white);
     letter-spacing: 1px;
     font-weight: 525;
     padding-left: 8px;
@@ -22,7 +20,7 @@
     text-overflow: ellipsis;
   }
   &:hover {
-    background-color: #ef430c;
+    background-color: $secondary-color;
     box-shadow: rgba($primary-color, 0.3) 0px 4px 6px -1px,
       rgba($primary-color, 0.1) 0px 2px 4px -1px, inset 0 0.5px 2px #ffffffa0;
   }
@@ -275,13 +273,13 @@ $modal-margin: 3rem;
             border: none;
           }
           &.modal-attachment {
-            border: 1.5px solid var(--color-secondary);
+            border: 1.5px solid $accent-color;
             background-color: transparent;
-            color: var(--color-secondary);
+            color: $accent-color;
             &:hover {
               color: white;
-              background-color: #e3ab3b;
-              border-color: #e3ab3b;
+              background-color: $accent-color;
+              border-color: $accent-color;
             }
           }
         }
@@ -307,10 +305,10 @@ $outline-color: #e6e6e6;
       position: relative;
       z-index: 7;
       .event-list-title {
-        font-family: "Instrument Sans";
+        font-family: "neue-haas-grotesk-text";
         color: rgb(29, 29, 29);
         font-size: 21px;
-        font-weight: 550;
+        font-weight: 500;
         padding-bottom: 0.75rem;
         letter-spacing: 0.1px;
       }
@@ -358,9 +356,9 @@ $outline-color: #e6e6e6;
           // bottom: 0.5rem;
           // right: 3rem;
           border-radius: 99px;
-          background-color: black;
+          // background-color: black;
           text-decoration: none;
-          transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: all 0.25s ease;
           padding: 6px 12px 6px 14px;
           box-shadow: none;
           .button-text {
@@ -379,13 +377,13 @@ $outline-color: #e6e6e6;
           }
         }
         .event-list-flyer-btn {
-          border: 1.5px solid var(--color-secondary);
-          background-color: transparent;
-          color: var(--color-secondary);
+          border: 1.5px solid $accent-color;
+          background-color: white;
+          color: $accent-color;
           &:hover {
             color: white;
-            background-color: #e3ab3b;
-            border-color: #e3ab3b;
+            background-color: $accent-color;
+            border-color: $accent-color;
           }
         }
         &.no-buttons {

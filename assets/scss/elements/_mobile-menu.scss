@@ -16,9 +16,12 @@
   flex-direction: column;
   overflow-y: auto;
   overflow: visible;
-
+  background-image: url(./../assets/images/logo/oconee-logo-ring-light-grey.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 197% 50%;
   @media #{$large-mobile} {
-    width: 90%;
+    width: 100%;
   }
 
   .inner-main-wrapper-desk {
@@ -64,7 +67,7 @@
   &.show {
     right: 0;
     overflow-y: auto;
-    box-shadow: -5px 0 30px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: -5px 0 30px 50px rgba(0, 0, 0, 0.35);
   }
   button {
     width: 42px;
@@ -98,7 +101,7 @@
       li {
         margin: 0;
         padding: 0;
-font-size: 14px;
+        font-size: 14px;
         a.main {
           padding: 12px 0 14px 0;
           border-bottom: 1px solid #f3f3f3;
