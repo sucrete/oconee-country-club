@@ -12,7 +12,7 @@
   margin-bottom: 1px !important;
   transition: all 0.25s ease;
   .fc-event-title {
-   @include monospaced(white);
+    @include monospaced(white);
     letter-spacing: 1px;
     font-weight: 525;
     padding-left: 8px;
@@ -768,6 +768,9 @@ section {
           }
         }
       }
+      .fc-event .fc-event-title {
+        line-height: unset;
+      }
     }
     &.hours-table {
       .container {
@@ -866,6 +869,9 @@ section {
         }
         .modal-footer {
           padding: 1rem 2rem 3rem 2rem;
+          .btn {
+            padding: 11px;
+          }
         }
       }
     }

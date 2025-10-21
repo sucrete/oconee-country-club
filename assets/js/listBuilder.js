@@ -1,5 +1,5 @@
 const calendarQuery =
-  "https://t47jkpm7.api.sanity.io/v2025-08-13/data/query/production?query=%7B%0A++%22events%22%3A+*%5B_type+%3D%3D+%22event%22%5D%0A%7D&perspective=published";
+  "https://9bp0tyzf.api.sanity.io/v2025-10-20/data/query/production?query=%7B%0A++%22events%22%3A+*%5B_type+%3D%3D+%22event%22%5D%0A%7D&perspective=published";
 
 const todaysDate = new Date();
 const futureDate = todaysDate.setMonth(todaysDate.getMonth() + 5);
