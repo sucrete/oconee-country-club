@@ -255,6 +255,7 @@ $modal-margin: 3rem;
         border-top-color: transparent;
         .btn {
           @include monospaced(white);
+          font-size: 14px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -265,7 +266,7 @@ $modal-margin: 3rem;
           transition: all 0.25s ease;
           border: none;
           &:hover {
-            background-color: #ef430c;
+            background-color: $secondary-color
           }
           &:active,
           &:focus {
@@ -356,7 +357,7 @@ $outline-color: #e6e6e6;
           // bottom: 0.5rem;
           // right: 3rem;
           border-radius: 99px;
-          // background-color: black;
+          background-color: $primary-color;
           text-decoration: none;
           transition: all 0.25s ease;
           padding: 6px 12px 6px 14px;
@@ -373,7 +374,8 @@ $outline-color: #e6e6e6;
             color: rgba(255, 255, 255, 0.8);
           }
           &:hover {
-            color: rgba(255, 255, 255, 0.8);
+            // color: rgba(255, 255, 255, 0.8);
+            background-color: $secondary-color;
           }
         }
         .event-list-flyer-btn {
@@ -870,6 +872,7 @@ section {
         .modal-footer {
           padding: 1rem 2rem 3rem 2rem;
           .btn {
+            font-size: 12px;
             padding: 11px;
           }
         }
