@@ -64,6 +64,7 @@ export class Footer extends LitElement {
               <div class="col-12 col-md-4 flex-column d-flex weather-column">
                 <!-- ⚜️⚜️⚜️⚜️⚜️ WEATHER BOX STARTS HERE ⚜️⚜️⚜️⚜️⚜️ -->
                 <div class="weather-box">
+                  <!-- TODAY WEATHER ROW START -->
                   <div class="row today-weather-row align-items-center">
                     <div class="col text-left weather today-weather">
                       mostly clear
@@ -84,6 +85,9 @@ export class Footer extends LitElement {
                       </div>
                     </div>
                   </div>
+                  <!-- TODAY WEATHER ROW END -->
+
+                  <!-- TOMORROW WEATHER ROW START -->
                   <div class="row future-weather-row">
                     <div class="col day tomorrow-day">Wed</div>
                     <div class="col icon text-center">
@@ -95,6 +99,9 @@ export class Footer extends LitElement {
                     </div>
                     <div class="col temp text-end tomorrow-hi-lo">98°/80°</div>
                   </div>
+                  <!-- TOMORROW WEATHER ROW END -->
+
+                  <!-- DAY AFTER TOMORROW WEATHER ROW START -->
                   <div class="row future-weather-row">
                     <div class="col day DAT-day">thurs</div>
                     <div class="col icon text-center">
@@ -106,6 +113,9 @@ export class Footer extends LitElement {
                     </div>
                     <div class="col temp text-end DAT-hi-lo">98°/80°</div>
                   </div>
+                  <!-- DAY AFTER TOMORROW WEATHER ROW END -->
+
+                  <!-- THREE DAYS FROM TODAY WEATHER ROW START -->
                   <div class="row future-weather-row">
                     <div class="col day TDFT-day">fri</div>
                     <div class="col icon text-center">
@@ -117,6 +127,7 @@ export class Footer extends LitElement {
                     </div>
                     <div class="col temp text-end TDFT-hi-lo">98°/80°</div>
                   </div>
+                  <!-- THREE DAYS FROM TODAY WEATHER ROW END -->
                 </div>
                 <!-- ⚜️⚜️⚜️⚜️⚜️ WEATHER BOX ENDS HERE ⚜️⚜️⚜️⚜️⚜️ -->
               </div>

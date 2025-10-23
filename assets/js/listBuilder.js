@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const sortedSegs = segs.sort(
           (a, b) => new Date(b.range.start) - new Date(a.range.start)
         );
-        console.log("sorted segs", sortedSegs);
-        console.log("segs.length > 0?: ", segs.length > 0);
-        console.log("segs[0].def", segs[0]?.def);
+        // console.log("sorted segs", sortedSegs);
+        // console.log("segs.length > 0?: ", segs.length > 0);
+        // console.log("segs[0].def", segs[0]?.def);
         let html =
           segs.length > 0
             ? ` <div class="events-list-wrapper events-list-wrapper-home d-flex flex-column-reverse">
@@ -109,10 +109,10 @@ document.addEventListener("DOMContentLoaded", function () {
         monthList: CustomViewConfig,
       },
     });
-    console.log(
-      `%c${JSON.stringify(data, null, 2)}`,
-      "color: red; background: black"
-    );
+    // console.log(
+    //   `%c${JSON.stringify(data, null, 2)}`,
+    //   "color: red; background: black"
+    // );
 
     //~ initialize Calendar
     var calendar = new FullCalendar.Calendar(cal, {

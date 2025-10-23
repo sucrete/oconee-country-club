@@ -10,12 +10,12 @@ async function fetchData(query) {
 
     const data = await response.json();
     // console.log("%cfetch successful ", "color:chartreuse;background: black");
-    console.log(
-      "%cfetch successful ",
-      "color:chartreuse;background: black",
-      data,
-      data.result
-    );
+    // console.log(
+    //   "%cfetch successful ",
+    //   "color:chartreuse;background: black",
+    //   data,
+    //   data.result
+    // );
     return data.result;
   } catch (error) {
     console.error("Error fetching data:", error);
