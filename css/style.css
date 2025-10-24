@@ -12112,166 +12112,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(3) {
-  z-index: 8;
-  transform: rotate(-4deg) translate(-50%, -50%);
-}
-.slyde:nth-child(3):before {
-  content: "3";
-}
-.slyde:nth-child(3).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(4) {
-  z-index: 7;
-  transform: rotate(1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(4):before {
-  content: "4";
-}
-.slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5):before {
-  content: "5";
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
-  transform: rotate(-4deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6):before {
-  content: "6";
-}
-.slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
-  transform: rotate(1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7):before {
-  content: "7";
-}
-.slyde:nth-child(7).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(8) {
-  z-index: 3;
-  transform: rotate(0deg) translate(-50%, -50%);
-}
-.slyde:nth-child(8):before {
-  content: "8";
-}
-.slyde:nth-child(8).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(9) {
-  z-index: 2;
-  transform: rotate(2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(9):before {
-  content: "9";
-}
-.slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12286,16 +12132,170 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(3) {
+  z-index: 8;
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+.slyde:nth-child(3):before {
+  content: "3";
+}
+.slyde:nth-child(3).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(0deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(4) {
+  z-index: 7;
+  transform: rotate(-4deg) translate(-50%, -50%);
+}
+.slyde:nth-child(4):before {
+  content: "4";
+}
+.slyde:nth-child(4).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-4deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(-2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5):before {
+  content: "5";
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6):before {
+  content: "6";
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(-2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7):before {
+  content: "7";
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(8) {
+  z-index: 3;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(8):before {
+  content: "8";
+}
+.slyde:nth-child(8).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9):before {
+  content: "9";
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -14044,7 +14044,7 @@ li.has-dropdown .doesnt-have-mr {
 }
 
 .banner-four-bg {
-  background-image: url(../images/ginger-golfer.jpg);
+  background-image: url(../images/occ-vista-4.jpg);
   height: 900px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -14091,57 +14091,6 @@ li.has-dropdown .doesnt-have-mr {
   .banner-four-bg .slider-wrapper .slider .slide .title-wrapper h2 {
     font-size: 45px;
     letter-spacing: -2px;
-  }
-}
-.banner-four-bg.home-page .banner-temp-wrapper,
-.banner-four-bg.home-page .location-wrapper {
-  position: absolute;
-  width: 500px;
-  z-index: 44;
-  opacity: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "t26-carbon";
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-}
-.banner-four-bg.home-page .banner-temp-wrapper .span-line,
-.banner-four-bg.home-page .location-wrapper .span-line {
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.44);
-  flex-grow: 1;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-.banner-four-bg.home-page .banner-temp-wrapper img,
-.banner-four-bg.home-page .location-wrapper img {
-  width: 12px;
-  height: auto;
-  margin-right: 8px;
-}
-.banner-four-bg.home-page .banner-temp-wrapper {
-  animation: 0.5s enter-right 1.5s ease forwards;
-  transform: rotate(90deg);
-  right: -19rem;
-}
-.banner-four-bg.home-page .location-wrapper {
-  transform: rotate(-90deg);
-  left: -19rem;
-  animation: 0.5s enter-left 1.5s ease forwards;
-}
-@keyframes enter-right {
-  to {
-    right: -17rem;
-    opacity: 0.7;
-  }
-}
-@keyframes enter-left {
-  to {
-    left: -17rem;
-    opacity: 0.7;
   }
 }
 .banner-four-bg.home-page .home-banner-heading {
@@ -14237,8 +14186,8 @@ li.has-dropdown .doesnt-have-mr {
   height: 100%;
   width: 100%;
   bottom: 0;
-  background-image: linear-gradient(to bottom, hsl(0, 0%, 0%) 100%, hsl(0, 0%, 0%) 100%);
-  opacity: 0.2;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  opacity: 0.5;
   z-index: 1;
 }
 .banner-four-area .banner-four-wrapper .inner-left {
@@ -14273,7 +14222,7 @@ li.has-dropdown .doesnt-have-mr {
 }
 
 .banner-subpage {
-  height: 550px;
+  height: 450px;
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14287,7 +14236,7 @@ li.has-dropdown .doesnt-have-mr {
   margin-top: 2rem;
 }
 .banner-subpage .banner-four-wrapper .title {
-  font-size: 70px;
+  font-size: 55px;
   margin-bottom: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
 }
@@ -14300,40 +14249,17 @@ li.has-dropdown .doesnt-have-mr {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
 }
 .banner-subpage.book-tee-time-banner {
-  background-image: url(../images/player-in-view.jpg);
+  background-image: url(../images/occ-vista-5.jpg);
 }
 .banner-subpage.book-tee-time-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  opacity: 1;
 }
 .banner-subpage.events-banner {
   background-image: url(../images/marimack-bunch-of-carts.jpg);
 }
 .banner-subpage.events-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
-}
-.banner-subpage.online-store-banner {
-  background-image: url(../images/marimack-bunch-of-carts-2.jpg);
-}
-.banner-subpage.online-store-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.76) 0%, hsla(0, 0%, 0%, 0.706) 7.1%, hsla(0, 0%, 0%, 0.655) 13.2%, hsla(0, 0%, 0%, 0.609) 18.3%, hsla(0, 0%, 0%, 0.566) 22.7%, hsla(0, 0%, 0%, 0.528) 26.8%, hsla(0, 0%, 0%, 0.492) 30.7%, hsla(0, 0%, 0%, 0.461) 34.8%, hsla(0, 0%, 0%, 0.432) 39.1%, hsla(0, 0%, 0%, 0.407) 44.1%, hsla(0, 0%, 0%, 0.385) 49.9%, hsla(0, 0%, 0%, 0.366) 56.7%, hsla(0, 0%, 0%, 0.351) 64.9%, hsla(0, 0%, 0%, 0.338) 74.7%, hsla(0, 0%, 0%, 0.327) 86.3%, hsla(0, 0%, 0%, 0.32) 100%);
-}
-.banner-subpage.host-your-event-banner {
-  background-image: url(../images/people-cheersing.jpg);
-}
-.banner-subpage.host-your-event-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.host-your-event-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.membership-banner {
-  background-image: url(../images/young-man-in-trap.jpg);
-}
-.banner-subpage.membership-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.membership-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.rates-banner {
   background-image: url(../images/golf-bag-in-foreground.jpg);
@@ -14344,57 +14270,18 @@ li.has-dropdown .doesnt-have-mr {
 .banner-subpage.rates-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
-.banner-subpage.pro-shop-banner {
-  background-image: url(../images/low-angle-ball.jpg);
+.banner-subpage.membership-banner {
+  background-image: url(../images/occ-vista-2.jpg);
 }
-.banner-subpage.pro-shop-banner .overlay {
+.banner-subpage.membership-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  opacity: 1;
 }
-.banner-subpage.pro-shop-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.mens-league-banner {
-  background-image: url(../images/bunch-of-gents.jpg);
-}
-.banner-subpage.mens-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.mens-league-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.womens-league-banner {
-  background-image: url(../images/womens-league.jpg);
-}
-.banner-subpage.womens-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.womens-league-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.ladies-evening-league-banner {
-  background-image: url(../images/womens-league.jpg);
-}
-.banner-subpage.ladies-evening-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.ladies-evening-league-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.couples-league-banner {
-  background-image: url(../images/couple-2.jpg);
-}
-.banner-subpage.couples-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.couples-league-banner .title {
+.banner-subpage.membership-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.calendar-banner {
-  background-image: url(../images/scenic-morning-green.jpg);
+  background-image: url(../images/occ-vista-1.jpg);
 }
 .banner-subpage.calendar-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14402,54 +14289,28 @@ li.has-dropdown .doesnt-have-mr {
 .banner-subpage.calendar-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
-.banner-subpage.open-tournaments-banner {
-  background-image: url(../images/train-of-golfers.jpg);
-}
-.banner-subpage.open-tournaments-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.open-tournaments-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.members-only-events-banner {
-  background-image: url(../images/group-of-friends.jpg);
-}
-.banner-subpage.members-only-events-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.members-only-events-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.instruction-banner {
-  background-image: url(../images/golf-instructor.jpg);
-}
-.banner-subpage.instruction-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.instruction-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
 .banner-subpage.contact-banner {
-  background-image: url(../images/player-in-view.jpg);
+  background-image: url(../images/occ-vista-7.jpg);
 }
 .banner-subpage.contact-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  opacity: 0.8;
 }
 .banner-subpage.contact-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
-.banner-subpage.meet-the-staff-banner {
+.banner-subpage.meet-the-team-banner {
   background-image: url(../images/golfer-with-perspective.jpg);
 }
-.banner-subpage.meet-the-staff-banner .overlay {
+.banner-subpage.meet-the-team-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
-.banner-subpage.meet-the-staff-banner .title {
+.banner-subpage.meet-the-team-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 @media only screen and (max-width: 767px) {
   .banner-subpage {
-    height: 550px;
+    height: 450px;
   }
 }
 .banner-subpage-subpage {

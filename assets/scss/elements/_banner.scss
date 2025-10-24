@@ -1,3 +1,103 @@
+
+$to-transparent-bg-gradient: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.72) 0%,
+  hsla(0, 0%, 0%, 0.585) 4.2%,
+  hsla(0, 0%, 0%, 0.469) 7.4%,
+  hsla(0, 0%, 0%, 0.369) 10%,
+  hsla(0, 0%, 0%, 0.284) 12.2%,
+  hsla(0, 0%, 0%, 0.213) 14.4%,
+  hsla(0, 0%, 0%, 0.156) 16.8%,
+  hsla(0, 0%, 0%, 0.109) 19.7%,
+  hsla(0, 0%, 0%, 0.073) 23.5%,
+  hsla(0, 0%, 0%, 0.046) 28.5%,
+  hsla(0, 0%, 0%, 0.027) 35%,
+  hsla(0, 0%, 0%, 0.014) 43.2%,
+  hsla(0, 0%, 0%, 0.006) 53.5%,
+  hsla(0, 0%, 0%, 0.002) 66.2%,
+  hsla(0, 0%, 0%, 0) 81.6%,
+  hsla(0, 0%, 0%, 0) 100%
+);
+
+$dark-background-gradient: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.4) 0%,
+  hsla(0, 0%, 0%, 0.397) 4.6%,
+  hsla(0, 0%, 0%, 0.387) 8.4%,
+  hsla(0, 0%, 0%, 0.373) 11.7%,
+  hsla(0, 0%, 0%, 0.354) 14.8%,
+  hsla(0, 0%, 0%, 0.333) 17.9%,
+  hsla(0, 0%, 0%, 0.308) 21.2%,
+  hsla(0, 0%, 0%, 0.283) 25%,
+  hsla(0, 0%, 0%, 0.257) 29.5%,
+  hsla(0, 0%, 0%, 0.232) 34.8%,
+  hsla(0, 0%, 0%, 0.207) 41.4%,
+  hsla(0, 0%, 0%, 0.186) 49.4%,
+  hsla(0, 0%, 0%, 0.167) 59%,
+  hsla(0, 0%, 0%, 0.153) 70.5%,
+  hsla(0, 0%, 0%, 0.143) 84.1%,
+  hsla(0, 0%, 0%, 0.14) 100%
+);
+$darker-background-gradient: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.6) 0%,
+  hsla(0, 0%, 0%, 0.594) 2.7%,
+  hsla(0, 0%, 0%, 0.576) 5.2%,
+  hsla(0, 0%, 0%, 0.548) 7.7%,
+  hsla(0, 0%, 0%, 0.512) 10.4%,
+  hsla(0, 0%, 0%, 0.47) 13.5%,
+  hsla(0, 0%, 0%, 0.424) 17.1%,
+  hsla(0, 0%, 0%, 0.375) 21.3%,
+  hsla(0, 0%, 0%, 0.325) 26.4%,
+  hsla(0, 0%, 0%, 0.276) 32.5%,
+  hsla(0, 0%, 0%, 0.23) 39.9%,
+  hsla(0, 0%, 0%, 0.188) 48.5%,
+  hsla(0, 0%, 0%, 0.152) 58.7%,
+  hsla(0, 0%, 0%, 0.124) 70.6%,
+  hsla(0, 0%, 0%, 0.106) 84.3%,
+  hsla(0, 0%, 0%, 0.1) 100%
+);
+
+$starker-gradient: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.76) 0%,
+  hsla(0, 0%, 0%, 0.706) 7.1%,
+  hsla(0, 0%, 0%, 0.655) 13.2%,
+  hsla(0, 0%, 0%, 0.609) 18.3%,
+  hsla(0, 0%, 0%, 0.566) 22.7%,
+  hsla(0, 0%, 0%, 0.528) 26.8%,
+  hsla(0, 0%, 0%, 0.492) 30.7%,
+  hsla(0, 0%, 0%, 0.461) 34.8%,
+  hsla(0, 0%, 0%, 0.432) 39.1%,
+  hsla(0, 0%, 0%, 0.407) 44.1%,
+  hsla(0, 0%, 0%, 0.385) 49.9%,
+  hsla(0, 0%, 0%, 0.366) 56.7%,
+  hsla(0, 0%, 0%, 0.351) 64.9%,
+  hsla(0, 0%, 0%, 0.338) 74.7%,
+  hsla(0, 0%, 0%, 0.327) 86.3%,
+  hsla(0, 0%, 0%, 0.32) 100%
+);
+
+$mobile-home-page-gradient: linear-gradient(
+  to bottom,
+  hsl(0, 0%, 0%) 0%,
+  hsla(0, 0%, 0%, 0.934) 2.8%,
+  hsla(0, 0%, 0%, 0.872) 5.6%,
+  hsla(0, 0%, 0%, 0.816) 8.5%,
+  hsla(0, 0%, 0%, 0.764) 11.7%,
+  hsla(0, 0%, 0%, 0.717) 15.3%,
+  hsla(0, 0%, 0%, 0.675) 19.4%,
+  hsla(0, 0%, 0%, 0.638) 24.1%,
+  hsla(0, 0%, 0%, 0.605) 29.6%,
+  hsla(0, 0%, 0%, 0.577) 36%,
+  hsla(0, 0%, 0%, 0.553) 43.4%,
+  hsla(0, 0%, 0%, 0.534) 52%,
+  hsla(0, 0%, 0%, 0.519) 61.8%,
+  hsla(0, 0%, 0%, 0.508) 73%,
+  hsla(0, 0%, 0%, 0.502) 85.7%,
+  hsla(0, 0%, 0%, 0.5) 100%
+);
+
 @keyframes textAnim {
   from {
     opacity: 0;
@@ -380,9 +480,10 @@
   }
 }
 
+//* THE HOME PAGE BANNER
 .banner-four-bg {
-  // background-image: url(../images/low-angle-action-shot.jpg);
-  background-image: url(../images/ginger-golfer.jpg);
+  background-image: url(../images/occ-vista-4.jpg);
+  // background-image: url(../images/ginger-golfer.jpg);
   height: 900px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -459,59 +560,9 @@
     }
   }
   &.home-page {
-    .banner-temp-wrapper,
-    .location-wrapper {
-      position: absolute;
-      width: 500px;
-      z-index: 44;
-      opacity: 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      font-family: "t26-carbon";
-      font-size: 13px;
-      letter-spacing: 1px;
-      font-weight: 700;
-      color: white;
-      text-transform: uppercase;
-      .span-line {
-        border-bottom: 1px dotted rgba(255, 255, 255, 0.44);
-        flex-grow: 1;
-        margin-left: 12px;
-        margin-right: 12px;
-      }
-      img {
-        width: 12px;
-        height: auto;
-        margin-right: 8px;
-        // transform: rotate(-90deg);
-        &.banner-tx-icon {
-          // transform: rotate(90deg)
-        }
-      }
-    }
-    .banner-temp-wrapper {
-      animation: 0.5s enter-right 1.5s ease forwards;
-      transform: rotate(90deg);
-      right: -19rem;
-    }
-    .location-wrapper {
-      transform: rotate(-90deg);
-      left: -19rem;
-      animation: 0.5s enter-left 1.5s ease forwards;
-    }
-    @keyframes enter-right {
-      to {
-        right: -17rem;
-        opacity: 0.7;
-      }
-    }
-    @keyframes enter-left {
-      to {
-        left: -17rem;
-        opacity: 0.7;
-      }
-    }
+   
+   
+   
     .home-banner-heading {
       &-mobile {
         display: none;
@@ -611,12 +662,8 @@
     height: 100%;
     width: 100%;
     bottom: 0;
-    background-image: linear-gradient(
-      to bottom,
-      hsl(0, 0%, 0%) 100%,
-      hsl(0, 0%, 0%) 100%
-    );
-    opacity: 0.2;
+    background-image: $darker-background-gradient;
+    opacity: 0.5;
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -652,106 +699,7 @@
   }
 }
 
-$to-transparent-bg-gradient: linear-gradient(
-  to bottom,
-  hsla(0, 0%, 0%, 0.72) 0%,
-  hsla(0, 0%, 0%, 0.585) 4.2%,
-  hsla(0, 0%, 0%, 0.469) 7.4%,
-  hsla(0, 0%, 0%, 0.369) 10%,
-  hsla(0, 0%, 0%, 0.284) 12.2%,
-  hsla(0, 0%, 0%, 0.213) 14.4%,
-  hsla(0, 0%, 0%, 0.156) 16.8%,
-  hsla(0, 0%, 0%, 0.109) 19.7%,
-  hsla(0, 0%, 0%, 0.073) 23.5%,
-  hsla(0, 0%, 0%, 0.046) 28.5%,
-  hsla(0, 0%, 0%, 0.027) 35%,
-  hsla(0, 0%, 0%, 0.014) 43.2%,
-  hsla(0, 0%, 0%, 0.006) 53.5%,
-  hsla(0, 0%, 0%, 0.002) 66.2%,
-  hsla(0, 0%, 0%, 0) 81.6%,
-  hsla(0, 0%, 0%, 0) 100%
-);
-
-$dark-background-gradient: linear-gradient(
-  to bottom,
-  hsla(0, 0%, 0%, 0.4) 0%,
-  hsla(0, 0%, 0%, 0.397) 4.6%,
-  hsla(0, 0%, 0%, 0.387) 8.4%,
-  hsla(0, 0%, 0%, 0.373) 11.7%,
-  hsla(0, 0%, 0%, 0.354) 14.8%,
-  hsla(0, 0%, 0%, 0.333) 17.9%,
-  hsla(0, 0%, 0%, 0.308) 21.2%,
-  hsla(0, 0%, 0%, 0.283) 25%,
-  hsla(0, 0%, 0%, 0.257) 29.5%,
-  hsla(0, 0%, 0%, 0.232) 34.8%,
-  hsla(0, 0%, 0%, 0.207) 41.4%,
-  hsla(0, 0%, 0%, 0.186) 49.4%,
-  hsla(0, 0%, 0%, 0.167) 59%,
-  hsla(0, 0%, 0%, 0.153) 70.5%,
-  hsla(0, 0%, 0%, 0.143) 84.1%,
-  hsla(0, 0%, 0%, 0.14) 100%
-);
-$darker-background-gradient: linear-gradient(
-  to bottom,
-  hsla(0, 0%, 0%, 0.6) 0%,
-  hsla(0, 0%, 0%, 0.594) 2.7%,
-  hsla(0, 0%, 0%, 0.576) 5.2%,
-  hsla(0, 0%, 0%, 0.548) 7.7%,
-  hsla(0, 0%, 0%, 0.512) 10.4%,
-  hsla(0, 0%, 0%, 0.47) 13.5%,
-  hsla(0, 0%, 0%, 0.424) 17.1%,
-  hsla(0, 0%, 0%, 0.375) 21.3%,
-  hsla(0, 0%, 0%, 0.325) 26.4%,
-  hsla(0, 0%, 0%, 0.276) 32.5%,
-  hsla(0, 0%, 0%, 0.23) 39.9%,
-  hsla(0, 0%, 0%, 0.188) 48.5%,
-  hsla(0, 0%, 0%, 0.152) 58.7%,
-  hsla(0, 0%, 0%, 0.124) 70.6%,
-  hsla(0, 0%, 0%, 0.106) 84.3%,
-  hsla(0, 0%, 0%, 0.1) 100%
-);
-
-$starker-gradient: linear-gradient(
-  to bottom,
-  hsla(0, 0%, 0%, 0.76) 0%,
-  hsla(0, 0%, 0%, 0.706) 7.1%,
-  hsla(0, 0%, 0%, 0.655) 13.2%,
-  hsla(0, 0%, 0%, 0.609) 18.3%,
-  hsla(0, 0%, 0%, 0.566) 22.7%,
-  hsla(0, 0%, 0%, 0.528) 26.8%,
-  hsla(0, 0%, 0%, 0.492) 30.7%,
-  hsla(0, 0%, 0%, 0.461) 34.8%,
-  hsla(0, 0%, 0%, 0.432) 39.1%,
-  hsla(0, 0%, 0%, 0.407) 44.1%,
-  hsla(0, 0%, 0%, 0.385) 49.9%,
-  hsla(0, 0%, 0%, 0.366) 56.7%,
-  hsla(0, 0%, 0%, 0.351) 64.9%,
-  hsla(0, 0%, 0%, 0.338) 74.7%,
-  hsla(0, 0%, 0%, 0.327) 86.3%,
-  hsla(0, 0%, 0%, 0.32) 100%
-);
-
-$mobile-home-page-gradient: linear-gradient(
-  to bottom,
-  hsl(0, 0%, 0%) 0%,
-  hsla(0, 0%, 0%, 0.934) 2.8%,
-  hsla(0, 0%, 0%, 0.872) 5.6%,
-  hsla(0, 0%, 0%, 0.816) 8.5%,
-  hsla(0, 0%, 0%, 0.764) 11.7%,
-  hsla(0, 0%, 0%, 0.717) 15.3%,
-  hsla(0, 0%, 0%, 0.675) 19.4%,
-  hsla(0, 0%, 0%, 0.638) 24.1%,
-  hsla(0, 0%, 0%, 0.605) 29.6%,
-  hsla(0, 0%, 0%, 0.577) 36%,
-  hsla(0, 0%, 0%, 0.553) 43.4%,
-  hsla(0, 0%, 0%, 0.534) 52%,
-  hsla(0, 0%, 0%, 0.519) 61.8%,
-  hsla(0, 0%, 0%, 0.508) 73%,
-  hsla(0, 0%, 0%, 0.502) 85.7%,
-  hsla(0, 0%, 0%, 0.5) 100%
-);
-
-$subpage-height: 550px;
+$subpage-height: 450px;
 
 .banner-subpage {
   height: $subpage-height;
@@ -766,7 +714,7 @@ $subpage-height: 550px;
     justify-content: center;
     margin-top: 2rem;
     .title {
-      font-size: 70px;
+      font-size: 55px;
       margin-bottom: 0;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
     }
@@ -797,9 +745,10 @@ $subpage-height: 550px;
   }
 
   &.book-tee-time-banner {
-    background-image: url(../images/player-in-view.jpg);
+    background-image: url(../images/occ-vista-5.jpg);
     .overlay {
-      background-image: $to-transparent-bg-gradient;
+      background-image: $darker-background-gradient;
+      opacity: 1;
     }
   }
   &.events-banner {
@@ -808,30 +757,7 @@ $subpage-height: 550px;
       background-image: $to-transparent-bg-gradient;
     }
   }
-  &.online-store-banner {
-    background-image: url(../images/marimack-bunch-of-carts-2.jpg);
-    .overlay {
-      background-image: $starker-gradient;
-    }
-  }
-  &.host-your-event-banner {
-    background-image: url(../images/people-cheersing.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.membership-banner {
-    background-image: url(../images/young-man-in-trap.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
+
   &.rates-banner {
     background-image: url(../images/golf-bag-in-foreground.jpg);
     .overlay {
@@ -841,84 +767,20 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
-  &.pro-shop-banner {
-    background-image: url(../images/low-angle-ball.jpg);
+ 
+  &.membership-banner {
+    background-image: url(../images/occ-vista-2.jpg);
     .overlay {
       background-image: $darker-background-gradient;
+      opacity: 1;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
-  &.mens-league-banner {
-    background-image: url(../images/bunch-of-gents.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.womens-league-banner {
-    background-image: url(../images/womens-league.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.ladies-evening-league-banner {
-    background-image: url(../images/womens-league.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.couples-league-banner {
-    background-image: url(../images/couple-2.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
+  
   &.calendar-banner {
-    background-image: url(../images/scenic-morning-green.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.open-tournaments-banner {
-    background-image: url(../images/train-of-golfers.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.members-only-events-banner {
-    background-image: url(../images/group-of-friends.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.instruction-banner {
-    background-image: url(../images/golf-instructor.jpg);
+    background-image: url(../images/occ-vista-1.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -927,15 +789,17 @@ $subpage-height: 550px;
     }
   }
   &.contact-banner {
-    background-image: url(../images/player-in-view.jpg);
+    // background-image: url(../images/player-in-view.jpg);
+    background-image: url(../images/occ-vista-7.jpg);
     .overlay {
       background-image: $darker-background-gradient;
+      opacity: .8
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
-  &.meet-the-staff-banner {
+  &.meet-the-team-banner {
     background-image: url(../images/golfer-with-perspective.jpg);
     .overlay {
       background-image: $darker-background-gradient;
