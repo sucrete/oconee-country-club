@@ -67,7 +67,6 @@ async function populateDOM() {
     document.getElementsByClassName("TDFT-hi-lo")[0];
 
   //~ Set Today's Weather
-  // console.log(weatherData.currently.icon);
   const today = weatherData.currently;
   // set today's icon
   const iconPath = assignIcon(today.icon);
@@ -78,6 +77,14 @@ async function populateDOM() {
 
   // set today's weather readable
   weather.innerHTML = today.summary;
+
+  //* check for existence of .banner-temp and update temperature
+  const bannerTemp = document.getElementsByClassName('banner-temp')[0];
+  if (!bannerTemp) {
+    return
+  } else {
+    bannerTemp.innerHTML = Math.ceil(today.temperature)
+  }
 
 
   //~ set tomorrow's Weather
