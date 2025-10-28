@@ -78,13 +78,11 @@ async function populateDOM() {
   // set today's weather readable
   weather.innerHTML = today.summary;
 
-  //* check for existence of .banner-temp and update temperature
+  //* check for existence of .banner-temp and add to DOM
   const bannerTemp = document.getElementsByClassName('banner-temp')[0];
-  if (!bannerTemp) {
-    return
-  } else {
+  if (bannerTemp) {
     bannerTemp.innerHTML = Math.ceil(today.temperature)
-  }
+  } 
 
 
   //~ set tomorrow's Weather
