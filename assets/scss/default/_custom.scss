@@ -559,6 +559,10 @@ table {
   }
 }
 
+section.course-page-body {
+  padding: 17rem 0;
+  background-color: #f4f4f4;
+}
 .with-chevron {
   padding-right: 15px !important;
 }
@@ -1486,10 +1490,10 @@ section.perks {
             }
           }
           p {
-            font-family: "IKOB";
+            font-family: "ivypresto-headline";
             color: var(--color-primary);
             font-size: 29px;
-            -webkit-text-stroke: 0.3px;
+            // -webkit-text-stroke: 0.3px;
             letter-spacing: 0.2px;
             margin-bottom: 10px;
           }
@@ -1586,17 +1590,24 @@ section.perks {
             }
             p {
               .chad-btn {
-                font-size: 14px;
-                font-family: "Alte Haas";
                 width: fit-content;
                 display: inline-block;
+                text-transform: lowercase;
                 margin: 0 auto;
                 border-radius: 99px;
                 padding: 4px 12px;
-                letter-spacing: 0.5px;
-                color: rgb(158, 158, 158);
                 border: none;
                 transition: all 0.15s ease;
+                @include monospaced(var(--body-text));
+                font-size: 14px;
+                font-weight: 550;
+                .chevron {
+                  width: 8px;
+                  height: auto;
+                  polygon {
+                    fill: var(--body-text);
+                  }
+                }
                 .fa-duotone {
                   margin-left: 0.5rem;
                   top: -1px;

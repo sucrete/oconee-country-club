@@ -14,18 +14,64 @@ export class Header extends LitElement {
               <div class="nav-area">
                 <nav>
                   <ul class="parent-nav">
-                    <li>
-                      <a class="nav-link" href="greens-fees.html"
-                        >Greens Fees</a
-                      >
+                    <li class="has-dropdown doesnt-have-mr">
+                      <a class="nav-link" href="#">
+                        Golf Course
+                        <img
+                          src="/assets/images/icons/sackers-chevron.svg"
+                          class="injectable chevron"
+                          alt=""
+                        />
+                      </a>
+                      <ul class="submenu parent-nav with-border">
+                        <li>
+                          <a href="greens-fees.html">
+                            <img
+                              src="/assets/images/icons/sackers-chevron.svg"
+                              class="injectable chevron"
+                              alt=""
+                            /><span class="text">course rates</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="membership-fees.html">
+                            <img
+                              src="/assets/images/icons/sackers-chevron.svg"
+                              class="injectable chevron"
+                              alt=""
+                            />
+                            <span class="text">Memberships</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="golf-lessons.html"> 
+                            <img
+                              src="/assets/images/icons/sackers-chevron.svg"
+                              class="injectable chevron"
+                              alt=""
+                            />
+                            <span class="text">Golf Lessons</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="meet-the-team.html">
+                            <img
+                              src="/assets/images/icons/sackers-chevron.svg"
+                              class="injectable chevron"
+                              alt=""
+                            />
+                            <span class="text">Meet the Team</span>
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <a class="nav-link" href="membership-fees.html"
-                        >Membership</a
-                      >
+                      <a href="/course-layout.html" class="nav-link">
+                        Course Layout
+                      </a>
                     </li>
                     <li>
-                      <a class="nav-link" href="calendar.html">Calendar</a>
+                      <a href="/calendar.html" class="nav-link"> Calendar </a>
                     </li>
                   </ul>
                 </nav>
@@ -47,12 +93,12 @@ export class Header extends LitElement {
               </div>
               <a href="index.html" class="logo-container">
                 <img
-                  src="/assets/images/logo/oconee-logo-ring.svg"
+                  src="/assets/images/logo/occ-hero-logo.svg"
                   alt=""
                   class="logo logo-white"
                 />
                 <img
-                  src="/assets/images/logo/OCC-Logo-Long-Dark.svg"
+                  src="/assets/images/logo/occ-logo.svg"
                   alt=""
                   class="logo logo-dark injectable"
                 />
@@ -72,36 +118,13 @@ export class Header extends LitElement {
               <div class="nav-area">
                 <nav>
                   <ul class="parent-nav">
-                    <li class="has-dropdown doesnt-have-mr">
-                      <a class="nav-link" href="#">
-                        About
-                        <img
-                          src="/assets/images/icons/sackers-chevron.svg"
-                          class="injectable chevron"
-                          alt=""
-                        />
+                    <li>
+                      <a href="/contact.html" class="nav-link">Info</a>
+                    </li>
+                    <li>
+                      <a href="/contact.html#message-us" class="nav-link">
+                        Message Us
                       </a>
-                      <ul class="submenu parent-nav with-border">
-                        <li>
-                          <a href="contact.html">
-                            <img
-                              src="/assets/images/icons/sackers-chevron.svg"
-                              class="injectable chevron"
-                              alt=""
-                            /><span class="text">Contact</span></a
-                          >
-                        </li>
-                        <li>
-                          <a href="contact.html#message-us">
-                            <img
-                              src="/assets/images/icons/sackers-chevron.svg"
-                              class="injectable chevron"
-                              alt=""
-                            />
-                            <span class="text">Message Us</span>
-                          </a>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <a

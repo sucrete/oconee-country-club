@@ -767,6 +767,24 @@ $subpage-height: 450px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.course-layout-banner {
+    background-image: url(../images/bunch-of-gents.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.golf-lessons-banner {
+    background-image: url(../images/golf-instructor.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
  
   &.membership-banner {
     background-image: url(../images/caravan-of-carts.jpg);

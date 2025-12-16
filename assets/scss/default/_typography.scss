@@ -9,30 +9,6 @@
   font-variation-settings: "wdth" 100;
 }
 
-//* Styling Sono
-
-.sono {
-  font-family: "Sono", monospace;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings: "MONO" 1;
-}
-
-//* IKOB
-@font-face {
-  font-family: "IKOB";
-  src: url("../assets/fonts/ikob.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "IKOB Italic";
-  src: url("../assets/fonts/ikob-italic.woff2") format("woff2"),
-    url("../assets/fonts/happy-times-NG_italic_master.otf") format("opentype"),
-    url("../assets/fonts/ikob-italic.otf") format("opentype");
-}
-
 //* Sackers Grotesk
 @font-face {
   font-family: "Sackers";
@@ -142,7 +118,7 @@ h4 {
 h3,
 h4 {
   font-family: "ivypresto-headline";
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 h1,

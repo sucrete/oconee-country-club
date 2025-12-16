@@ -60,7 +60,7 @@
     <!-- fullCalendar -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
     <!-- fullCalendar initiation -->
-    <script src="assets/js/listBuilder.js"></script>
+    <!-- <script src="assets/js/listBuilder.js"></script> -->
     <!-- moment.js - time parsing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
       <!-- Sanity data fetch -->
@@ -429,22 +429,28 @@
       <div class="mobile-menu-main">
         <nav class="nav-main mainmenu-nav mt--30">
           <ul class="mainmenu metismenu" id="mobile-menu-active">
-            <li>
-              <a href="greens-fees.html" class="main">Greens Fees</a>
+           <li class="has-droupdown">
+              <a href="#" class="main" aria-expanded="false">Golf Course</a>
+              <ul class="submenu mm-collapse">
+                <li><a href="greens-fees.html">Course Rates</a></li>
+                <li><a href="membership-fees.html">Memberships</a></li>
+                <li><a href="golf-lessons.html">Golf Lessons</a></li>
+                <li><a href="meet-the-team.html">Meet the Team</a></li>
+              </ul>
             </li>
             <li>
-              <a href="membership-fees.html" class="main">Membership</a>
+              <a href="course-layout.html" class="main">Course Layout</a>
             </li>
             <li>
               <a href="calendar.html" class="main">Calendar</a>
             </li>
-            <li class="has-droupdown">
-              <a href="#" class="main" aria-expanded="false">About</a>
-              <ul class="submenu mm-collapse">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html#message-us">Message Us</a></li>
-              </ul>
+            <li>
+              <a href="contact.html" class="main">Info</a>
             </li>
+            <li>
+              <a href="contact.html#message-us" class="main">Message Us</a>
+            </li>
+          
             <li>
               <a
                 href="book-tee-time.html"

@@ -20,8 +20,10 @@ export class Footer extends LitElement {
                     <div class="sitemap-container">
                       <div class="sitemap-label">pages</div>
                       <ul>
-                        <li><a href="/greens-fees.html">greens fees</a></li>
-                        <li><a href="/membership-fees.html">membership</a></li>
+                        <li><a href="/greens-fees.html">course rates</a></li>
+                        <li><a href="/membership-fees.html">memberships</a></li>
+                        <li><a href="/golf-lessons.html">golf lessons</a></li>
+                        <li><a href="/meet-the-team.html">meet the team</a></li>
                         <li><a href="/calendar.html">calendar</a></li>
                         <li><a href="/contact.html">contact</a></li>
                         <li>
@@ -56,7 +58,7 @@ export class Footer extends LitElement {
               <div class="col-12 col-md-4 logo-column">
                 <a href="/index.html" class="cornered-box">
                   <img
-                    src="./assets/images/logo/oconee-logo-ring.svg"
+                    src="./assets/images/logo/occ-hero-logo.svg"
                     class="footer-logo"
                     alt=""
                 /></a>
