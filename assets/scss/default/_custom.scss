@@ -5,6 +5,9 @@
 .modal {
   background: rgba(0, 0, 0, 0.262745098);
 }
+.italic {
+  font-style: italic;
+}
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -560,7 +563,7 @@ table {
 }
 
 section.course-page-body {
-  padding: 17rem 0;
+  padding: 17rem 0 21rem;
   background-color: #f4f4f4;
 }
 .with-chevron {

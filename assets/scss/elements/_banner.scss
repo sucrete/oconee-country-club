@@ -706,6 +706,9 @@ $subpage-height: 450px;
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+  .title {
+    font-family: 'ivypresto-headline'
+  }
   .overlay {
     height: 100%;
     opacity: 1;

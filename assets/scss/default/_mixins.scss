@@ -46,6 +46,15 @@
   @media screen and (max-width: 768px) {
     font-size: 15px;
     line-height: 23px;
-    letter-spacing: .2px;
+    letter-spacing: 0.2px;
   }
+}
+
+@mixin paragraph-text($text-color: #262626) {
+  color: $text-color;
+  font-weight: 400;
+  padding-left: 4px;
+  letter-spacing: 0.2px;
+  margin-bottom: 1.5rem;
+  font-size: 15px;
 }

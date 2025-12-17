@@ -79,6 +79,10 @@
                 height: 100%;
                 &:first-of-type {
                   padding-right: 7rem;
+                  padding-left: 2rem;
+                }
+                &:nth-of-type(2) {
+                  padding-right: 0;
                 }
                 h3 {
                   font-family: "ivypresto-headline";
@@ -86,22 +90,23 @@
                   font-size: 40px;
                 }
                 .par {
-                  @include monospaced(var(--color-body));
+                  @include monospaced(#262626);
                   font-size: 14px;
                   line-height: 1;
                   padding-bottom: 2rem;
                 }
                 .hole-description {
-                  color: var(--color-body);
-                  margin-block-end: 3rem;
+                  color: #262626;
+                  margin-block-end: 2.5rem;
                 }
                 .yardage {
-                  @include monospaced(var(--color-body));
+                  @include monospaced(#262626);
                   font-size: 14px;
                   display: flex;
                   flex-direction: row;
                   align-items: center;
                   padding-left: 3px;
+                  padding-bottom: .5rem;
                   .yardage-circle {
                     height: 8px;
                     width: 8px;
@@ -128,8 +133,8 @@
                   position: relative;
                   img {
                     @include center-it();
-                    width: 100%;
-                    height: auto;
+                    min-width: 100%;
+                    min-height: 100%;
                   }
                 }
               }
@@ -264,7 +269,7 @@
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   font-size: 1.8rem;
   font-weight: 450;
-  color: rgb(104, 104, 104);
+  color: rgb(167 167 167);
   display: flex;
   letter-spacing: 0.2px;
   align-items: center;

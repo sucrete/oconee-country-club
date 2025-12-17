@@ -12072,14 +12072,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12094,14 +12094,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12116,14 +12116,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12160,14 +12160,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12226,14 +12226,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12248,14 +12248,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12270,14 +12270,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12628,6 +12628,10 @@ Copyright (c) 2015 Daniel Eden
 }
 .course-page-body .embla .embla__viewport .embla__container .embla__slide .embla__slide__wrapper .row [class*=col]:first-of-type {
   padding-right: 7rem;
+  padding-left: 2rem;
+}
+.course-page-body .embla .embla__viewport .embla__container .embla__slide .embla__slide__wrapper .row [class*=col]:nth-of-type(2) {
+  padding-right: 0;
 }
 .course-page-body .embla .embla__viewport .embla__container .embla__slide .embla__slide__wrapper .row [class*=col] h3 {
   font-family: "ivypresto-headline";
@@ -12639,7 +12643,7 @@ Copyright (c) 2015 Daniel Eden
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: lowercase;
-  color: var(--color-body);
+  color: #262626;
   font-size: 14px;
   line-height: 1;
   padding-bottom: 2rem;
@@ -12651,20 +12655,21 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 .course-page-body .embla .embla__viewport .embla__container .embla__slide .embla__slide__wrapper .row [class*=col] .hole-description {
-  color: var(--color-body);
-  margin-block-end: 3rem;
+  color: #262626;
+  margin-block-end: 2.5rem;
 }
 .course-page-body .embla .embla__viewport .embla__container .embla__slide .embla__slide__wrapper .row [class*=col] .yardage {
   font-family: "Sackers", monospace;
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: lowercase;
-  color: var(--color-body);
+  color: #262626;
   font-size: 14px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 3px;
+  padding-bottom: 0.5rem;
 }
 @media screen and (max-width: 768px) {
   .course-page-body .embla .embla__viewport .embla__container .embla__slide .embla__slide__wrapper .row [class*=col] .yardage {
@@ -12701,8 +12706,8 @@ Copyright (c) 2015 Daniel Eden
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .embla {
@@ -12813,7 +12818,7 @@ Copyright (c) 2015 Daniel Eden
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   font-size: 1.8rem;
   font-weight: 450;
-  color: rgb(104, 104, 104);
+  color: rgb(167, 167, 167);
   display: flex;
   letter-spacing: 0.2px;
   align-items: center;
@@ -14349,6 +14354,9 @@ li.has-dropdown .doesnt-have-mr {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner-subpage .title {
+  font-family: "ivypresto-headline";
+}
 .banner-subpage .overlay {
   height: 100%;
   opacity: 1;
@@ -15441,6 +15449,61 @@ section.hours-table .container .row [class*=col] .list-container ul li, section.
 }
 section.hours-table .container .row [class*=col] .list-container ul li::marker, section.course-policies .container .row [class*=col] .list-container ul li::marker {
   color: rgb(232, 232, 232);
+}
+section.hours-table.lessons, section.course-policies.lessons {
+  margin: 2.75rem 2.5rem;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column p, section.course-policies.lessons .container .row [class*=col] .lessons-description-column p {
+  color: #262626;
+  font-weight: 400;
+  padding-left: 4px;
+  letter-spacing: 0.2px;
+  margin-bottom: 1.5rem;
+  font-size: 15px;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column hr, section.course-policies.lessons .container .row [class*=col] .lessons-description-column hr {
+  background-color: rgba(0, 0, 0, 0.06);
+  margin-top: 2.9rem;
+  opacity: 1;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 32%;
+  padding: 2.75rem 2.5rem 2.75rem 2.5rem;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 0 0px 1.25px rgba(0, 0, 0, 0.03);
+  transition: all 0.15s ease;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box svg, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box svg {
+  width: 15px;
+  height: auto;
+  margin-left: 3px;
+  margin-bottom: 10px;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box svg path, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box svg path {
+  fill: rgb(79, 79, 79);
+  fill: var(--color-secondary);
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box svg[class*=group], section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box svg[class*=group] {
+  width: 19px;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box .lesson-title, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box .lesson-title {
+  font-weight: 400;
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box .lesson-price, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box .lesson-price {
+  color: rgb(79, 79, 79);
+}
+section.hours-table.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box:hover, section.course-policies.lessons .container .row [class*=col] .lessons-description-column .lessons-container .lesson-box:hover {
+  box-shadow: 0 0 0 1.25px rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.025) 0px 4px 6px -2px;
 }
 section.course-policies {
   margin: 0;
@@ -17517,6 +17580,7 @@ section.contact-page-body .container .row [class*=col] h2 {
   padding-bottom: 3rem;
   margin-bottom: 3rem;
   border-bottom: 1px dotted rgb(215, 215, 215);
+  font-family: "ivypresto-headline";
 }
 section.contact-page-body .container .row [class*=col] h2 .italicized {
   font-style: italic;
@@ -17553,6 +17617,7 @@ section.contact-page-body .contact-area-form-wrapper .container-contact .row .pi
 section.contact-page-body .contact-area-form-wrapper .container-contact .row h2 {
   font-size: 57px;
   padding-top: 2rem;
+  font-family: "ivypresto-headline";
 }
 
 .contact-page-banner {
@@ -19180,6 +19245,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background: rgba(0, 0, 0, 0.262745098);
 }
 
+.italic {
+  font-style: italic;
+}
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -19675,7 +19744,7 @@ table.de-emphasize {
 }
 
 section.course-page-body {
-  padding: 17rem 0;
+  padding: 17rem 0 21rem;
   background-color: #f4f4f4;
 }
 

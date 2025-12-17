@@ -56,6 +56,13 @@
 
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
+
+    <!-- Alpine.js -->
+    <script type="module" src="assets/js/data/holeData.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
 
   <body>
@@ -88,100 +95,54 @@
       <div class="container">
         <div class="embla">
           <div class="embla__viewport">
-            <div class="embla__container">
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper p-5">
-                  <div class="row h-100">
+            <div x-data="holesData" class="embla__container">
+              <template x-for="hole in holes">
+                <!-- * 'embla__slide' is the encapsulating element for each slide -->
+
+                <div class="embla__slide">
+                  <div class="embla__slide__wrapper p-5">
                     <div
-                      class="col-12 col-md-6 align-content-center justify-content-center"
+                      class="row h-100 w-100 flex-column-reverse flex-sm-row"
                     >
-                      <h3>Hole 1</h3>
-                      <div class="par">par 4</div>
-                      <p class="hole-description">
-                        A tough opening hole requiring an accurate tee shot to
-                        the right-center fairway; approach shot must avoid the
-                        small, undulating green's large bunkers.
-                      </p>
-                      <div class="yardage">
-                        <div class="yardage-circle blue"></div>
-                        356 yards
+                      <div
+                        class="col-12 col-md-6 align-content-center justify-content-center"
+                      >
+                        <h3>Hole <span x-text="hole.hole">1</span></h3>
+                        <div class="par">
+                          par <span x-text="hole.par">4</span>
+                        </div>
+                        <p class="hole-description" x-text="hole.description">
+                          A tough opening hole requiring an accurate tee shot to
+                          the right-center fairway; approach shot must avoid the
+                          small, undulating green's large bunkers.
+                        </p>
+
+                        <template x-for="teeBox in hole.teeBoxes">
+                          <div class="yardage">
+                            <div
+                              :class="teeBox.teeBox"
+                              class="yardage-circle"
+                            ></div>
+                            <span x-text="teeBox.yardage">777</span>&nbsp;yards
+                          </div>
+                        </template>
                       </div>
-                      <div class="yardage">
-                        <div class="yardage-circle yellow"></div>
-                        348 yards
-                      </div>
-                      <div class="yardage">
-                        <div class="yardage-circle red"></div>
-                        332 yards
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="course-image-container">
-                        <img src="images/hole-1.jpg" alt="" />
+                      <div class="col-12 col-md-6">
+                        <div class="course-image-container">
+                          <img :src="hole.pictureURL" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">2</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">3</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">4</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">5</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">6</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">7</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">8</div>
-              </div>
-
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">9</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">10</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">11</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">12</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">13</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">14</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">15</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">16</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">17</div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__wrapper">18</div>
-              </div>
+              </template>
             </div>
           </div>
           <div class="embla-thumbs">
             <div class="embla-thumbs__viewport">
               <div class="embla-thumbs__container">
                 <div
-                  class="embla-thumbs__slide embla-thumbs__slide--selected one"
+                  class="embla-thumbs__slide one embla-thumbs__slide--selected"
                 >
                   <button type="button" class="embla-thumbs__slide__number">
                     Hole 1

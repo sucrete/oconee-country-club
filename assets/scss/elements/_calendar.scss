@@ -40,7 +40,7 @@ section {
           .fc-toolbar-chunk {
             .fc-toolbar-title {
               font-size: 47px;
-              font-family: 'ivypresto-headline';
+              font-family: "ivypresto-headline";
             }
             &:last-of-type {
               display: flex;
@@ -267,7 +267,7 @@ $modal-margin: 3rem;
           transition: all 0.25s ease;
           border: none;
           &:hover {
-            background-color: $secondary-color
+            background-color: $secondary-color;
           }
           &:active,
           &:focus {
@@ -618,6 +618,67 @@ section {
                 font-weight: 400;
                 &::marker {
                   color: rgb(232, 232, 232);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.lessons {
+      margin: 2.75rem 2.5rem;
+      .container {
+        .row {
+          [class*="col"] {
+            .lessons-description-column {
+              p {
+                @include paragraph-text();
+              }
+              hr {
+                background-color: rgba(0, 0, 0, 0.06);
+                margin-top: 2.9rem;
+                opacity: 1;
+              }
+              .lessons-container {
+                padding: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 14px;
+                .lesson-box {
+                  display: flex;
+                  flex-direction: column;
+                  flex: 0 0 32%;
+                  padding: 2.75rem 2.5rem 2.75rem 2.5rem;
+                  border-radius: 0px;
+                  background-color: white;
+                  box-shadow: 0 0 0px 1.25px rgba(0, 0, 0, 0.03);
+                  transition: all 0.15s ease;
+                  svg {
+                    width: 15px;
+                    height: auto;
+                    margin-left: 3px;
+                    margin-bottom: 10px;
+                    path {
+                      fill: rgb(79, 79, 79);
+                      fill: var(--color-secondary);
+                    }
+                    &[class*='group'] {
+                      width: 19px;
+                    }
+                  }
+                  .lesson-title {
+                    font-weight: 400;
+                  }
+                  .lesson-price {
+                    color: rgb(79, 79, 79);
+                  }
+                  &:hover {
+                    box-shadow: 0 0 0 1.25px rgba(0, 0, 0, 0.1),
+                      rgba(0, 0, 0, 0.05) 0px 10px 15px -3px,
+                      rgba(0, 0, 0, 0.025) 0px 4px 6px -2px;
+                    // box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.025) 0px 4px 6px -2px;
+                  }
                 }
               }
             }
