@@ -2,6 +2,7 @@
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
+
 .modal {
   background: rgba(0, 0, 0, 0.262745098);
 }
@@ -33,7 +34,8 @@
   }
   &:hover {
     // transform: translateY(-1px);
-    box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px,
+    box-shadow:
+      rgba(50, 50, 93, 0.15) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
   }
 }
@@ -107,7 +109,8 @@
   position: relative;
   z-index: 69;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   .row {
     height: 100%;
@@ -201,11 +204,11 @@
 
 //* cornered box
 .cornered-container {
-  margin-bottom: 18rem;
-  text-align: center;
+  // margin-bottom: 18rem;
+  text-align: left;
   // from https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders
   .cornered-box {
-    margin: auto;
+    // margin: auto;
     color: white;
     // padding: 2rem 1.75rem;
     max-width: 500px;
@@ -214,35 +217,16 @@
     line-height: 140%;
     position: relative;
     z-index: 6;
-
-    // corners ruleset
-    // --b: 1px; /* thickness of the border */
-    // --c: rgba(255, 255, 255, 0.497); /* color of the border */
-    // --w: 14px; /* length of the lines in the corner */
-    // border: var(--b) solid #0000; /* space for the border */
-    // --_g: #0000 90deg, var(--c) 0;
-    // --_p: var(--w) var(--w) border-box no-repeat;
-
-    // background: conic-gradient(
-    //       from 90deg at top var(--b) left var(--b),
-    //       var(--_g)
-    //     )
-    //     0 0 / var(--_p),
-    //   conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100%
-    //     0 / var(--_p),
-    //   conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0
-    //     100% / var(--_p),
-    //   conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
-    //     100% 100% / var(--_p);
+    text-shadow: 0 0 10px black;
   }
   .temperature-preview-wrapper {
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: -35rem;
+    bottom: 0rem;
     right: 0.8rem;
     align-items: center;
-    padding: 1.5rem 2rem 8rem 2rem;
+    padding: 1.5rem 2rem 3rem 2rem;
     backdrop-filter: blur(17px);
     background-color: rgba(255, 255, 255, 0.127);
     animation: reveal 1.5s ease forwards;
@@ -250,7 +234,8 @@
     transform: translateY(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
     opacity: 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     .location {
       @include monospaced(#fff);
@@ -281,6 +266,9 @@
       text-transform: capitalize;
       font-weight: 500;
       font-style: italic;
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
   .facebook-reveal {
@@ -353,10 +341,15 @@ a {
     // border-top: 3px solid rgb(227, 227, 227);
     // border: 1px solid rgba(0, 0, 0, 0.109);
     box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
-    box-shadow: transparent 0px 64px 64px -32px, transparent 0px 32px 32px -16px,
-      transparent 0px 16px 16px -8px, #003d3d0a 0px 12px 12px -6px,
-      #003d3d0a 0px 6px 6px -3px, #003d3d0a 0px 3px 3px -1.5px,
-      #001f1f14 0px 1px 1px -0.5px, #003d3d0a 0px 0px 0px 1px;
+    box-shadow:
+      transparent 0px 64px 64px -32px,
+      transparent 0px 32px 32px -16px,
+      transparent 0px 16px 16px -8px,
+      #003d3d0a 0px 12px 12px -6px,
+      #003d3d0a 0px 6px 6px -3px,
+      #003d3d0a 0px 3px 3px -1.5px,
+      #001f1f14 0px 1px 1px -0.5px,
+      #003d3d0a 0px 0px 0px 1px;
     background: white;
     padding: 0;
     overflow: hidden;
@@ -422,10 +415,15 @@ a {
       background: var(--color-offset);
       transform: translateY(-5px);
       box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
-      box-shadow: #003d3d0a 0px 64px 64px -32px, #003d3d0a 0px 32px 32px -16px,
-        #003d3d0a 0px 16px 16px -8px, #003d3d0a 0px 12px 12px -6px,
-        #003d3d0a 0px 6px 6px -3px, #003d3d0a 0px 3px 3px -1.5px,
-        #001f1f14 0px 1px 1px -0.5px, #003d3d0a 0px 0px 0px 1px;
+      box-shadow:
+        #003d3d0a 0px 64px 64px -32px,
+        #003d3d0a 0px 32px 32px -16px,
+        #003d3d0a 0px 16px 16px -8px,
+        #003d3d0a 0px 12px 12px -6px,
+        #003d3d0a 0px 6px 6px -3px,
+        #003d3d0a 0px 3px 3px -1.5px,
+        #001f1f14 0px 1px 1px -0.5px,
+        #003d3d0a 0px 0px 0px 1px;
       .bottom {
         h4 {
           color: white;
@@ -963,7 +961,8 @@ section.perks {
               min-height: 20px;
               width: 70px;
               transition: all 0.3s ease;
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              box-shadow:
+                rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
                 rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             }
             .nav-item {
@@ -1166,7 +1165,8 @@ section.perks {
         backdrop-filter: blur(16px);
         border-radius: 32px;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        box-shadow:
+          rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
           rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         .masters-logo {
           width: 100px;
@@ -1179,7 +1179,8 @@ section.perks {
           right: 10rem;
           padding: 0 20px 5px 20px;
           background: black;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px,
+          box-shadow:
+            rgba(0, 0, 0, 0.3) 0px 20px 25px -5px,
             rgba(0, 0, 0, 0.09) 0px 10px 10px -5px;
           .match-play-logo {
             width: 175px;
@@ -1655,7 +1656,8 @@ section.perks {
   padding: $pp 14px $pp 6px;
   letter-spacing: 1px;
   line-height: 139%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   font-size: 13px;
   font-weight: 550;
@@ -1669,7 +1671,8 @@ section.perks {
     height: auto;
   }
   &.online-pill {
-    box-shadow: rgba(0, 0, 0, 0.075) 0px 12px 28px 0px,
+    box-shadow:
+      rgba(0, 0, 0, 0.075) 0px 12px 28px 0px,
       rgba(0, 0, 0, 0.025) 0px 2px 4px 0px;
   }
   &.opening-celebration-pill {
@@ -1689,7 +1692,8 @@ section.perks {
   }
   &.register-button {
     border: 1px solid rgba(255, 255, 255, 0.478);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 6px -1px,
+    box-shadow:
+      rgba(0, 0, 0, 0.15) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.09) 0px 2px 4px -1px;
   }
 }
@@ -1730,6 +1734,9 @@ section.perks {
     }
   }
 }
+.container-header {
+  max-width: 90vw;
+}
 
 //* ===================================================
 //* ================ PHABLET STYLING ==================
@@ -1747,6 +1754,9 @@ section.perks {
   }
 }
 @media (max-width: 992px) {
+  .container-header {
+     max-width: 100%;
+  }
   section {
     &.mobile-padding {
       padding-top: 3rem;

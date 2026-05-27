@@ -1,4 +1,3 @@
-
 $to-transparent-bg-gradient: linear-gradient(
   to bottom,
   hsla(0, 0%, 0%, 0.72) 0%,
@@ -96,6 +95,26 @@ $mobile-home-page-gradient: linear-gradient(
   hsla(0, 0%, 0%, 0.508) 73%,
   hsla(0, 0%, 0%, 0.502) 85.7%,
   hsla(0, 0%, 0%, 0.5) 100%
+);
+
+$subtler-bg-grad: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.8) 0%,
+  hsla(0, 0%, 0%, 0.72) 5.1%,
+  hsla(0, 0%, 0%, 0.65) 10.4%,
+  hsla(0, 0%, 0%, 0.587) 16%,
+  hsla(0, 0%, 0%, 0.532) 21.7%,
+  hsla(0, 0%, 0%, 0.484) 27.7%,
+  hsla(0, 0%, 0%, 0.443) 33.9%,
+  hsla(0, 0%, 0%, 0.408) 40.3%,
+  hsla(0, 0%, 0%, 0.379) 47%,
+  hsla(0, 0%, 0%, 0.355) 53.9%,
+  hsla(0, 0%, 0%, 0.336) 61%,
+  hsla(0, 0%, 0%, 0.322) 68.3%,
+  hsla(0, 0%, 0%, 0.312) 75.9%,
+  hsla(0, 0%, 0%, 0.305) 83.7%,
+  hsla(0, 0%, 0%, 0.301) 91.7%,
+  hsla(0, 0%, 0%, 0.3) 100%
 );
 
 @keyframes textAnim {
@@ -482,12 +501,14 @@ $mobile-home-page-gradient: linear-gradient(
 
 //* THE HOME PAGE BANNER
 .banner-four-bg {
-  background-image: url(../images/occ-vista-4.jpg);
+  background-image: url(../images/occ-vista-11.jpg);
   // background-image: url(../images/ginger-golfer.jpg);
-  height: 900px !important;
+  // height: 600px !important;
+  min-height: 700px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  padding-bottom: 5rem;
+  // background-size: cover;
   @media screen and (min-width: 767px) and (max-width: 992px) {
     .cornered-container {
       margin-bottom: 6rem;
@@ -502,37 +523,16 @@ $mobile-home-page-gradient: linear-gradient(
   }
   @media #{$sm-layout} {
     height: 600px !important;
+  
     .cornered-container {
-      margin-top: 5rem;
+      // margin-top: 5rem;
       margin-bottom: 2.25rem;
       .cornered-box {
-        margin-top: 0.5rem;
-        width: 65%;
-        line-height: 1.3;
-        text-align: center;
+        margin-top: 1.5rem;
+        width: 75%;
+        line-height: 1.4;
+        text-align: left;
         font-size: 13px;
-        // corners ruleset
-        // --b: 1px; /* thickness of the border */
-        // --c: rgb(255, 255, 255); /* color of the border */
-        // --w: 7px; /* length of the lines in the corner */
-        // border: var(--b) solid #0000; /* space for the border */
-        // --_g: #0000 90deg, var(--c) 0;
-        // --_p: var(--w) var(--w) border-box no-repeat;
-
-        // background: conic-gradient(
-        //       from 90deg at top var(--b) left var(--b),
-        //       var(--_g)
-        //     )
-        //     0 0 / var(--_p),
-        //   conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g))
-        //     100% 0 / var(--_p),
-        //   conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g))
-        //     0 100% / var(--_p),
-        //   conic-gradient(
-        //       from -90deg at bottom var(--b) right var(--b),
-        //       var(--_g)
-        //     )
-        //     100% 100% / var(--_p);
         .hide-on-mobile,
         .remove-on-mobile,
         .temperature-preview-wrapper,
@@ -540,7 +540,9 @@ $mobile-home-page-gradient: linear-gradient(
           display: none;
         }
       }
+     
     }
+
     .slider-wrapper {
       bottom: 0.75rem;
       .slider {
@@ -560,15 +562,14 @@ $mobile-home-page-gradient: linear-gradient(
     }
   }
   &.home-page {
-   
-   
-   
     .home-banner-heading {
+      font-size: 52px;
+      position: relative;
+      text-shadow: 0 0 15px black;
       &-mobile {
         display: none;
       }
-      font-size: 85px;
-      position: relative;
+
       // & > * {
       //   display: inline;
       // }
@@ -606,7 +607,7 @@ $mobile-home-page-gradient: linear-gradient(
   color: white;
   text-shadow: 0 1px 31px rgba(0, 0, 0, 0.184);
   &.italicized {
-    font-family: "ivypresto-display";
+    font-family: "ivypresto-headline";
     font-style: italic;
   }
   &:nth-of-type(2) {
@@ -619,7 +620,9 @@ $mobile-home-page-gradient: linear-gradient(
   &:nth-of-type(4) {
     animation-delay: 1.1s;
     .online-pill {
-      animation: 0.4s slam 1.7s ease forwards, 0.2s rattle 2.1s forwards;
+      animation:
+        0.4s slam 1.7s ease forwards,
+        0.2s rattle 2.1s forwards;
       transform: scale(7, 7) rotate(25deg);
       position: absolute;
       display: block;
@@ -637,7 +640,8 @@ $mobile-home-page-gradient: linear-gradient(
       letter-spacing: 1px;
       font-weight: 700;
       opacity: 0;
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 28px 0px,
+      box-shadow:
+        rgba(0, 0, 0, 0.15) 0px 12px 28px 0px,
         rgba(0, 0, 0, 0.05) 0px 2px 4px 0px,
         rgba(255, 255, 255, 0.025) 0px 0px 0px 1px inset;
       svg {
@@ -662,8 +666,8 @@ $mobile-home-page-gradient: linear-gradient(
     height: 100%;
     width: 100%;
     bottom: 0;
-    background-image: $darker-background-gradient;
-    opacity: 0.5;
+    background-image: $subtler-bg-grad;
+    opacity: 0.6;
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -707,7 +711,7 @@ $subpage-height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
   .title {
-    font-family: 'ivypresto-headline'
+    font-family: "ivypresto-headline";
   }
   .overlay {
     height: 100%;
@@ -748,7 +752,7 @@ $subpage-height: 450px;
   }
 
   &.book-tee-time-banner {
-    background-image: url(../images/occ-vista-5.jpg);
+    // background-image: url(../images/occ-2.jpg);
     .overlay {
       background-image: $darker-background-gradient;
       opacity: 1;
@@ -788,9 +792,9 @@ $subpage-height: 450px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
- 
+
   &.membership-banner {
-    background-image: url(../images/caravan-of-carts.jpg);
+    background-image: url(../images/occ-vista-2.jpg);
     .overlay {
       background-image: $darker-background-gradient;
       opacity: 1;
@@ -799,9 +803,9 @@ $subpage-height: 450px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
-  
+
   &.calendar-banner {
-    background-image: url(../images/bunch-of-gents.jpg);
+    background-image: url(../images/occ-8.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -814,14 +818,14 @@ $subpage-height: 450px;
     background-image: url(../images/occ-vista-7.jpg);
     .overlay {
       background-image: $darker-background-gradient;
-      opacity: .8
+      opacity: 0.8;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
   &.meet-the-team-banner {
-    background-image: url(../images/golfer-with-perspective.jpg);
+    background-image: url(../images/occ-vista-1.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -1218,6 +1222,8 @@ $subpage-height: 450px;
 
 @media screen and (max-width: 768px) {
   .banner-four-bg {
+    background-image: url(../images/occ-4.jpg);
+    background-size: cover;
     &.home-page {
       .home-banner-heading {
         &-desktop {
@@ -1226,7 +1232,7 @@ $subpage-height: 450px;
         &-mobile {
           display: unset;
         }
-        line-height: 0.7;
+        line-height: 0.9;
         font-size: 42px;
         .br-1 {
           display: unset;
@@ -1240,8 +1246,125 @@ $subpage-height: 450px;
       }
       .overlay {
         background-image: $mobile-home-page-gradient;
-        opacity: 0.5;
+        opacity: 0.25;
       }
     }
+  }
+}
+
+.gradient-blur-elliptical {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+
+  > div,
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+  }
+
+  // Ellipse is 190% of element width × 100% of element height, centered.
+  // Side edges land at ~52.6% of gradient space (clear zone); top/bottom edges at 100%.
+  // Blur bands occupy 80%–100% in 2.5% steps, doubling from 0.5px outward.
+  $e: "ellipse 95% 62% at 50% 40%";
+
+  &::before {
+    content: "";
+    z-index: 1;
+    backdrop-filter: blur(0.5px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 80%,
+      black 82.5%,
+      black 85%,
+      transparent 87.5%
+    );
+  }
+
+  > div:nth-of-type(1) {
+    z-index: 2;
+    backdrop-filter: blur(1px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 82.5%,
+      black 85%,
+      black 87.5%,
+      transparent 90%
+    );
+  }
+
+  > div:nth-of-type(2) {
+    z-index: 3;
+    backdrop-filter: blur(2px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 85%,
+      black 87.5%,
+      black 90%,
+      transparent 92.5%
+    );
+  }
+
+  > div:nth-of-type(3) {
+    z-index: 4;
+    backdrop-filter: blur(4px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 87.5%,
+      black 90%,
+      black 92.5%,
+      transparent 95%
+    );
+  }
+
+  > div:nth-of-type(4) {
+    z-index: 5;
+    backdrop-filter: blur(8px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 90%,
+      black 92.5%,
+      black 95%,
+      transparent 97.5%
+    );
+  }
+
+  > div:nth-of-type(5) {
+    z-index: 6;
+    backdrop-filter: blur(16px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 92.5%,
+      black 95%,
+      black 97.5%,
+      transparent 100%
+    );
+  }
+
+  > div:nth-of-type(6) {
+    z-index: 7;
+    backdrop-filter: blur(32px);
+    mask: radial-gradient(
+      #{$e},
+      transparent 0%,
+      transparent 95%,
+      black 97.5%,
+      black 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    z-index: 8;
+    backdrop-filter: blur(64px);
+    mask: radial-gradient(#{$e}, transparent 0%, transparent 97.5%, black 100%);
   }
 }

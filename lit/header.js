@@ -7,7 +7,7 @@ export class Header extends LitElement {
 
   render() {
     return html`
-      <div class="container">
+      <div class="container container-header">
         <div class="row">
           <div class="col-lg-12">
             <div class="header-four-wrapper">
@@ -16,7 +16,7 @@ export class Header extends LitElement {
                   <ul class="parent-nav">
                     <li class="has-dropdown doesnt-have-mr">
                       <a class="nav-link" href="#">
-                        Golf Course
+                        Rates
                         <img
                           src="/assets/images/icons/sackers-chevron.svg"
                           class="injectable chevron"
@@ -30,7 +30,7 @@ export class Header extends LitElement {
                               src="/assets/images/icons/sackers-chevron.svg"
                               class="injectable chevron"
                               alt=""
-                            /><span class="text">course rates</span></a
+                            /><span class="text">Greens Fees</span></a
                           >
                         </li>
                         <li>
@@ -43,17 +43,7 @@ export class Header extends LitElement {
                             <span class="text">Memberships</span>
                           </a>
                         </li>
-                        <li>
-                          <a href="golf-lessons.html"> 
-                            <img
-                              src="/assets/images/icons/sackers-chevron.svg"
-                              class="injectable chevron"
-                              alt=""
-                            />
-                            <span class="text">Golf Lessons</span>
-                          </a>
-                        </li>
-                        <li>
+                        <!-- <li>
                           <a href="meet-the-team.html">
                             <img
                               src="/assets/images/icons/sackers-chevron.svg"
@@ -62,14 +52,17 @@ export class Header extends LitElement {
                             />
                             <span class="text">Meet the Team</span>
                           </a>
-                        </li>
+                        </li> -->
                       </ul>
                     </li>
                     <li>
+                      <a href="/golf-lessons.html" class="nav-link">Golf Lessons</a>
+                    </li>
+                    <!-- <li>
                       <a href="/course-layout.html" class="nav-link">
                         Course Layout
                       </a>
-                    </li>
+                    </li> -->
                     <li>
                       <a href="/calendar.html" class="nav-link"> Calendar </a>
                     </li>

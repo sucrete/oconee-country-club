@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Oconee Country Club | Seneca, SC</title>
@@ -20,7 +20,7 @@
       href="assets/css/vendor/bootstrap.min.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
     <link
@@ -28,7 +28,7 @@
       href="assets/css/plugins/fontawesome.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
     <link
@@ -36,7 +36,7 @@
       href="assets/css/plugins/metismenu.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
     <!-- primary css -->
@@ -47,6 +47,9 @@
 
     <!-- Adobe Typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/ckj2fji.css" />
+
+    <!-- gradient blur Lit component -->
+    <script type="module" src="./lit/gradient-blur.js"></script>
 
     <!-- header Lit component -->
     <script type="module" src="./lit/header.js"></script>
@@ -63,14 +66,12 @@
     <script src="assets/js/listBuilder.js"></script>
     <!-- moment.js - time parsing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
-      <!-- Sanity data fetch -->
+    <!-- Sanity data fetch -->
     <script src="assets/js/fetchData.js"></script>
 
     <!-- embla carousel -->
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
-
-  
   </head>
 
   <body style="position: relative">
@@ -94,10 +95,13 @@
 
     <!-- rts banner four start -->
     <div
-      class="banner banner-four-area banner-four-bg rts-section-gap jarallax home-page"
+      class="banner banner-four-area banner-four-bg jarallax home-page"
+      data-img-position="52% 220%"
+      data-speed="0.8"
     >
+      <!-- <gradient-blur-elliptical rx="0.95" ry="0.65" rotation="1.5" blur-start="80" cy-offset="-30"></gradient-blur-elliptical> -->
       <div class="overlay"></div>
-      <div class="container cornered-container">
+      <div class="container cornered-container mb-0">
         <div class="row">
           <div class="col">
             <h2 class="home-banner-heading home-banner-heading-desktop">
@@ -112,15 +116,9 @@
               <span class="text-anim"> Oconee Country </span><br />
               <span class="text-anim"> Club </span>
             </h2>
-            <div class="cornered-box simple-anim">
+            <div class="cornered-box simple-anim ps-2">
               Oconee Country Club is a semi-private golf course nestled just
               outside Seneca, South Carolina, in the beautiful lower Appalachia.
-              <span class="remove-on-mobile">
-                Open to the public year-round, our course is known for its
-                undulating
-                <span class="p-italic">Diamond Zoysia</span>
-                greens and captivating vistas.</span
-              >
             </div>
           </div>
         </div>
@@ -131,7 +129,7 @@
             <div>°</div>
           </div>
         </div>
-        <a
+        <!-- <a
           href="https://www.facebook.com/OconeeGolf/?ref=embed_page#"
           class="facebook-reveal"
           target="_blank"
@@ -141,7 +139,7 @@
             alt=""
             class="acebook injectable"
           />
-        </a>
+        </a> -->
       </div>
     </div>
     <!-- rts banner four end -->
@@ -215,75 +213,6 @@
         </div>
       </div>
     </section>
-
-    <!-- gallery section start -->
-
-    <!-- <section>
-      <div class="container">
-        <div class="embla">
-          <div class="embla__viewport">
-            <div class="embla__container">
-              <div class="embla__slide">
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="https://picsum.photos/600/350?v=1"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="https://picsum.photos/600/350?v=2"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="https://picsum.photos/600/350?v=3"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="https://picsum.photos/600/350?v=4"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="https://picsum.photos/600/350?v=5"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- gallery section end -->
 
     <!-- events section -->
     <section class="hours-table">
@@ -429,18 +358,19 @@
       <div class="mobile-menu-main">
         <nav class="nav-main mainmenu-nav mt--30">
           <ul class="mainmenu metismenu" id="mobile-menu-active">
-           <li class="has-droupdown">
-              <a href="#" class="main" aria-expanded="false">Golf Course</a>
+            <li class="has-droupdown">
+              <a href="#" class="main" aria-expanded="false">Rates</a>
               <ul class="submenu mm-collapse">
-                <li><a href="greens-fees.html">Course Rates</a></li>
+                <li><a href="greens-fees.html">Greens Fees</a></li>
                 <li><a href="membership-fees.html">Memberships</a></li>
-                <li><a href="golf-lessons.html">Golf Lessons</a></li>
-                <li><a href="meet-the-team.html">Meet the Team</a></li>
+
+                <!-- <li><a href="meet-the-team.html">Meet the Team</a></li> -->
               </ul>
             </li>
-            <li>
+            <!-- <li>
               <a href="course-layout.html" class="main">Course Layout</a>
-            </li>
+            </li> -->
+            <li><a href="golf-lessons.html" class="main">Golf Lessons</a></li>
             <li>
               <a href="calendar.html" class="main">Calendar</a>
             </li>
@@ -450,7 +380,7 @@
             <li>
               <a href="contact.html#message-us" class="main">Message Us</a>
             </li>
-          
+
             <li>
               <a
                 href="book-tee-time.html"

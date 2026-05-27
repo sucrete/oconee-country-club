@@ -20,10 +20,10 @@ export class Footer extends LitElement {
                     <div class="sitemap-container">
                       <div class="sitemap-label">pages</div>
                       <ul>
-                        <li><a href="/greens-fees.html">course rates</a></li>
+                        <li><a href="/greens-fees.html">Greens Fees</a></li>
                         <li><a href="/membership-fees.html">memberships</a></li>
                         <li><a href="/golf-lessons.html">golf lessons</a></li>
-                        <li><a href="/meet-the-team.html">meet the team</a></li>
+                        <!-- <li><a href="/meet-the-team.html">meet the team</a></li> -->
                         <li><a href="/calendar.html">calendar</a></li>
                         <li><a href="/contact.html">contact</a></li>
                         <li>

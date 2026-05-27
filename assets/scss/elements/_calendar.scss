@@ -779,6 +779,17 @@ section {
           }
         }
       }
+      &.lessons {
+        margin: 1rem;
+        padding: 5rem 1rem;
+        .container {
+          .row {
+            h3 {
+              line-height: 1.1;
+            }
+          }
+        }
+      }
     }
 
     &.calendar-section {
