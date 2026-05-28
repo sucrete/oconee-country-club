@@ -516,6 +516,7 @@ $subtler-bg-grad: linear-gradient(
     height: 80vh !important;
     min-height: 90vh;
     .cornered-container {
+      padding-top: 5rem;
       .cornered-box {
         width: 75%;
         line-height: 1.5;
@@ -1232,8 +1233,8 @@ $subpage-height: 450px;
         .row {
           .col {
             .home-banner-heading {
-              line-height: 0.9;
-              font-size: 42px;
+              line-height: 1;
+              font-size: 38px;
               &-desktop {
                 display: none;
               }
