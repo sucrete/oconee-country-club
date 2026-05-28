@@ -502,36 +502,23 @@ $subtler-bg-grad: linear-gradient(
 //* THE HOME PAGE BANNER
 .banner-four-bg {
   background-image: url(../images/occ-vista-11.jpg);
-  // background-image: url(../images/ginger-golfer.jpg);
-  // height: 600px !important;
-  min-height: 700px;
+  min-height: 900px;
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 5rem;
-  // background-size: cover;
   @media screen and (min-width: 767px) and (max-width: 992px) {
     .cornered-container {
       margin-bottom: 6rem;
     }
   }
-  @media (max-width: 992px) {
-    &.banner-four-area {
-      .shape {
-        right: 3rem;
-      }
-    }
-  }
+
   @media #{$sm-layout} {
-    height: 600px !important;
-  
+    height: 80vh !important;
+    min-height: 80vh;
     .cornered-container {
-      // margin-top: 5rem;
-      margin-bottom: 2.25rem;
       .cornered-box {
-        margin-top: 1.5rem;
         width: 75%;
-        line-height: 1.4;
-        text-align: left;
+        line-height: 1.5;
         font-size: 13px;
         .hide-on-mobile,
         .remove-on-mobile,
@@ -540,7 +527,6 @@ $subtler-bg-grad: linear-gradient(
           display: none;
         }
       }
-     
     }
 
     .slider-wrapper {
@@ -562,14 +548,31 @@ $subtler-bg-grad: linear-gradient(
     }
   }
   &.home-page {
+    .banner-icon {
+      width: 30px;
+      height: auto;
+      margin: 0 auto 1rem auto;
+      animation: reveal 1.5s ease forwards;
+      transform: translateY(10px);
+      animation-delay: .7s;
+      opacity: 0;
+      @media #{$sm-layout} {
+        width: 25px;
+      }
+    }
+
     .home-banner-heading {
-      font-size: 52px;
+      font-size: 62px;
+      font-family: "ivypresto-display";
       position: relative;
-      text-shadow: 0 0 15px black;
+      text-align: center;
+      text-shadow: 0 3px 5px black;
       &-mobile {
         display: none;
       }
-
+      .italicized {
+        font-family: "ivypresto-display";
+      }
       // & > * {
       //   display: inline;
       // }
@@ -1225,28 +1228,36 @@ $subpage-height: 450px;
     background-image: url(../images/occ-4.jpg);
     background-size: cover;
     &.home-page {
-      .home-banner-heading {
-        &-desktop {
-          display: none;
-        }
-        &-mobile {
-          display: unset;
-        }
-        line-height: 0.9;
-        font-size: 42px;
-        .br-1 {
-          display: unset;
-        }
-        .br-2 {
-          display: none;
-        }
-        .br-3 {
-          display: unset;
+      .container {
+        .row {
+          .col {
+            .home-banner-heading {
+              line-height: 0.9;
+              font-size: 42px;
+              &-desktop {
+                display: none;
+              }
+              &-mobile {
+                display: unset;
+              }
+
+              .br-1 {
+                display: unset;
+              }
+              .br-2 {
+                display: none;
+              }
+              .br-3 {
+                display: unset;
+              }
+            }
+          }
         }
       }
+
       .overlay {
         background-image: $mobile-home-page-gradient;
-        opacity: 0.25;
+        opacity: 0.5;
       }
     }
   }

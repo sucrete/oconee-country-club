@@ -204,39 +204,47 @@
 
 //* cornered box
 .cornered-container {
-  // margin-bottom: 18rem;
   text-align: left;
-  // from https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders
+  .row {
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   .cornered-box {
-    // margin: auto;
+    margin: 0 auto;
     color: white;
-    // padding: 2rem 1.75rem;
+    text-align: center;
     max-width: 500px;
     font-size: 15px;
     letter-spacing: 0.25px;
     line-height: 140%;
     position: relative;
     z-index: 6;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.243);
   }
+ 
   .temperature-preview-wrapper {
+    border-radius: 2px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: 0rem;
+    bottom: -33rem;
     right: 0.8rem;
     align-items: center;
     padding: 1.5rem 2rem 3rem 2rem;
     backdrop-filter: blur(17px);
-    background-color: rgba(255, 255, 255, 0.127);
+    background-color: rgba(115, 117, 112, 0.286);
     animation: reveal 1.5s ease forwards;
     animation-delay: 1.4s;
     transform: translateY(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
     opacity: 0;
     box-shadow:
-      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      rgba(50, 50, 93, 0.05) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.15) 0px 8px 16px -8px;
     .location {
       @include monospaced(#fff);
     }
@@ -274,7 +282,7 @@
   .facebook-reveal {
     position: absolute;
     left: 0.7rem;
-    bottom: -27rem;
+    bottom: -32rem;
     width: 42px;
     height: 42px;
     backdrop-filter: blur(17px);
@@ -324,6 +332,9 @@
       .acebook {
         opacity: 1;
       }
+    }
+     @media (max-width: 768px) {
+      display: none;
     }
   }
   @keyframes reveal {
@@ -1735,7 +1746,7 @@ section.perks {
   }
 }
 .container-header {
-  max-width: 90vw;
+  // max-width: 90vw;
 }
 
 //* ===================================================
@@ -1755,7 +1766,7 @@ section.perks {
 }
 @media (max-width: 992px) {
   .container-header {
-     max-width: 100%;
+    max-width: 100%;
   }
   section {
     &.mobile-padding {

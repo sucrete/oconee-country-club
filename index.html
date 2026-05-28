@@ -48,9 +48,6 @@
     <!-- Adobe Typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/ckj2fji.css" />
 
-    <!-- gradient blur Lit component -->
-    <script type="module" src="./lit/gradient-blur.js"></script>
-
     <!-- header Lit component -->
     <script type="module" src="./lit/header.js"></script>
 
@@ -72,6 +69,9 @@
     <!-- embla carousel -->
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+
+    <!-- HLS.js for banner video -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   </head>
 
   <body style="position: relative">
@@ -95,15 +95,21 @@
 
     <!-- rts banner four start -->
     <div
-      class="banner banner-four-area banner-four-bg jarallax home-page"
-      data-img-position="52% 220%"
-      data-speed="0.8"
+      class="banner banner-four-area banner-four-bg home-page"
     >
-      <!-- <gradient-blur-elliptical rx="0.95" ry="0.65" rotation="1.5" blur-start="80" cy-offset="-30"></gradient-blur-elliptical> -->
+      <video
+        id="banner-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"
+      ></video>
       <div class="overlay"></div>
-      <div class="container cornered-container mb-0">
+      <div class="container cornered-container">
         <div class="row">
           <div class="col">
+            <img src="assets/images/svgs/little-green.svg" class="banner-icon" alt="">
             <h2 class="home-banner-heading home-banner-heading-desktop">
               <span class="text-anim italicized">Welcome </span>
               <span class="text-anim"> to </span><br />
@@ -116,7 +122,7 @@
               <span class="text-anim"> Oconee Country </span><br />
               <span class="text-anim"> Club </span>
             </h2>
-            <div class="cornered-box simple-anim ps-2">
+            <div class="cornered-box simple-anim">
               Oconee Country Club is a semi-private golf course nestled just
               outside Seneca, South Carolina, in the beautiful lower Appalachia.
             </div>
@@ -129,7 +135,7 @@
             <div>°</div>
           </div>
         </div>
-        <!-- <a
+        <a
           href="https://www.facebook.com/OconeeGolf/?ref=embed_page#"
           class="facebook-reveal"
           target="_blank"
@@ -139,7 +145,7 @@
             alt=""
             class="acebook injectable"
           />
-        </a> -->
+        </a>
       </div>
     </div>
     <!-- rts banner four end -->
@@ -410,6 +416,22 @@
     <script src="./assets/js/weather.js "></script>
 
     <!-- <script type="module" src="./assets/js/embla.js"></script> -->
+
+    <script>
+      (function () {
+        const video = document.getElementById("banner-video");
+        const src =
+          "https://stream.mux.com/FZAIP1UgNx00xyhx01OCOT58x0002wANfCIrORUOieqhl5Y.m3u8";
+        if (Hls.isSupported()) {
+          const hls = new Hls({ autoStartLoad: true, startLevel: -1 });
+          hls.loadSource(src);
+          hls.attachMedia(video);
+        } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+          video.src = src;
+          video.load();
+        }
+      })();
+    </script>
 
     <script>
       const landingBanner = document.getElementsByClassName("banner")[0];
