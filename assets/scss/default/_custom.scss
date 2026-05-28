@@ -236,7 +236,7 @@
     align-items: center;
     padding: 1.5rem 2rem 3rem 2rem;
     backdrop-filter: blur(17px);
-    background-color: rgba(115, 117, 112, 0.286);
+    background-color: oklab(0.71 0 0.01 / 0.29);
     animation: reveal 1.5s ease forwards;
     animation-delay: 1.4s;
     transform: translateY(10px);
