@@ -204,7 +204,7 @@
 
 //* cornered box
 .cornered-container {
-  padding-top:3rem;
+  padding-top: 3rem;
   text-align: left;
   .row {
     .col {
@@ -226,7 +226,7 @@
     z-index: 6;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.243);
   }
- 
+
   .temperature-preview-wrapper {
     border-radius: 2px;
     position: absolute;
@@ -257,13 +257,13 @@
       align-items: flex-start;
       .banner-temp {
         position: relative;
-        font-size: 55px;
+        font-size: 50px;
         line-height: 0.7;
-        left: 5px;
+        left: 3px;
         & + div {
           position: relative;
-          left: 4px;
-          top: -3px;
+          left: 5px;
+          top: -2px;
           font-size: 32px;
         }
       }
@@ -334,7 +334,7 @@
         opacity: 1;
       }
     }
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }

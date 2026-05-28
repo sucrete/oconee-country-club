@@ -501,10 +501,11 @@ $subtler-bg-grad: linear-gradient(
 
 //* THE HOME PAGE BANNER
 .banner-four-bg {
-  background-image: url(../images/occ-vista-11.jpg);
+  background-image: url(https://image.mux.com/FZAIP1UgNx00xyhx01OCOT58x0002wANfCIrORUOieqhl5Y/thumbnail.webp?fit_mode=preserve&width=2500&height=1406&time=00);
   min-height: 900px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-bottom: 5rem;
   @media screen and (min-width: 767px) and (max-width: 992px) {
     .cornered-container {
